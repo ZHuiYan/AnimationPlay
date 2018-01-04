@@ -6,13 +6,23 @@
     android:layout_height="match_parent"
     tools:context="com.example.zhaohuiyan.animationplay.MainActivity">
 
-    <TextView
+    <Button
+        android:id="@+id/tvViewAnimator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="view 动画"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/tvAttribute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="属性动画"
+        app:layout_constraintBottom_toTopOf="@id/tvViewAnimator"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 </android.support.constraint.ConstraintLayout>
